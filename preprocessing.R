@@ -5,11 +5,11 @@ library(ggpubr)
 library(rmarkdown)
 library(dplyr)
 #### Tabella covid ####
-covid <- read_excel("./TEST_murri_01.xlsx")
+covid <- read_excel("./File_Marchetti/ESAMI_MURRI2703.xlsx")
 covid <- as.data.frame(covid)
 NosograficoCovid <- unique(covid$NOSOGRAFICO)
 #### Tabella tampone ####
-tampone <- read_excel("./TAMPONE_V01.xlsx")
+tampone <- read_excel("./File_Marchetti/TAMPONI2703.xlsx")
 tampone <- as.data.frame(tampone)
 NosograficoTampone <- unique(tampone$NOSOGRAFICO)
 # tampone$RISULTATO_ESAME <- as.factor(tampone$RISULTATO_ESAME)
